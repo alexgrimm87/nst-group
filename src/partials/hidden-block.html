@@ -1,0 +1,92 @@
+<div class="hidden-block">
+
+    <div id="call_success">
+         <div class="call-success-wrap">
+             <div class="call-success-title"> Спасибо за заявку!</div>
+             <div class="call-success-subtitle">Мы свяжемся с Вами в ближайшее время</div>
+         </div>
+    </div>
+
+    <div id="cost-popup" class="el-cost">
+      <div class="title">
+        <h4>рассчитать стоимость</h4>
+      </div>
+      <form action="ajax-programer.php" method="post" class="cost-form">
+        <div class="fields-wrap">
+          <div class="form-field">
+            <input type="text" name="name" placeholder="Имя" required />
+          </div>
+          <div class="form-field">
+            <input type="text" name="tel" class="tel-mask" placeholder="Телефон" required />
+          </div>
+          <div class="form-field">
+            <input type="text" name="city" placeholder="Город доставки" />
+          </div>
+          <div class="form-field">
+            <input type="text" name="material" placeholder="Материал" readonly />
+          </div>
+          <div class="form-field">
+            <input type="text" name="fraction" placeholder="Фракция" />
+          </div>
+          <div class="form-field">
+            <input type="text" name="amount" placeholder="Количество" />
+          </div>
+        </div>
+        <button type="submit" class="el-button button-red">отправить</button>
+      </form>
+    </div>
+
+    <div id="discount-popup" class="el-cost">
+      <div class="title">
+        <h4>Заполните форму</h4>
+        <p>и узнайте какую скидку мы можем дать Вам</p>
+      </div>
+      <form action="ajax-programer.php" method="post" class="cost-form">
+        <div class="fields-wrap">
+          <div class="form-field">
+            <input type="text" name="name" placeholder="Имя" required />
+          </div>
+          <div class="form-field">
+            <input type="text" name="tel" class="tel-mask" placeholder="Телефон" required />
+          </div>
+          <div class="form-field">
+            <input type="text" name="city" placeholder="Город доставки" />
+          </div>
+          <div class="form-field">
+           <select name="material" data-placeholder="Выберете материал">
+            <option></option>
+            <option value="">1Lorem ipsum</option>
+            <option value="">2Lorem ipsum</option>
+            <option value="">3Lorem ipsum</option>
+          </select>
+          </div>
+          <div class="form-field">
+            <input type="text" name="fraction" placeholder="Фракция" />
+          </div>
+          <div class="form-field">
+            <input type="text" name="amount" placeholder="Количество" />
+            <input type="hidden" name="sale" value="Скидка">
+          </div>
+        </div>
+        <button type="submit" class="el-button button-red">отправить</button>
+      </form>
+    </div>
+
+    <div id="call-popup" class="el-cost call">
+      <div class="title">
+        <h4>Заполните форму</h4>
+      </div>
+      <form action="ajax-programer.php" method="post" class="cost-form">
+        <div class="fields-wrap">
+          <div class="form-field">
+            <input type="text" name="name" placeholder="Имя" required />
+          </div>
+          <div class="form-field">
+            <input type="text" name="tel" class="tel-mask" placeholder="Телефон" required />
+          </div>
+        </div>
+        <button type="submit" class="el-button button-red">отправить</button>
+      </form>
+    </div>
+
+</div>

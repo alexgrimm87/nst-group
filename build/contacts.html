@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>НСТГРУПП</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="styles/plagins.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+<div class="global-wrapper">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="mbox">
+        <div class="el-nav">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <div class="burger">
+            <div class="burger-brick"></div>
+            <div class="burger-brick middle"></div>
+            <div class="burger-brick"></div>
+          </div>
+          <div class="menu-wrap">
+            <ul class="menu sliding-menu">
+              <li>
+                <a href="about.html">О компании</a>
+                <ul>
+                  <li>
+                    <a href="docs.html">Документы</a>
+                  </li>
+                  <li>
+                    <a href="vacancies.html">Вакансии</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="catalog.html">Продукция</a>
+              </li>
+              <li>
+                <a href="services.html">Доставка</a>
+                <ul>
+                  <li>
+                    <a href="transport-auto.html">Автомобильные перевозки</a>
+                  </li>
+                  <li>
+                    <a href="transport-train.html">Ж/Д перевозки</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="partners.html">Партнеры</a>
+              </li>
+              <li>
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="nav-contacts">
+              <a href="tel:4353455462">+ (435) 345 54 62</a>
+            </div>
+            <a href="#call-popup" class="el-button js-call">Обратный звонок</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <div class="main">
+        <!-- add partials here -->
+		<!-- Begin Contacts -->
+		<section class="contacts">
+		  <div class="mbox">
+		    <ul class="el-breadcrumbs">
+		      <li>
+		        <a href="index.html">Главная</a>
+		      </li>
+		      <li>
+		        <a href="contacts.html">Контакты</a>
+		      </li>
+		    </ul>
+		    <div class="el-title">
+		      <h2>наши контакты</h2>
+		      <span class="en-lang">Contacts</span>
+		    </div>
+		    <div class="mbox2">
+		      <ul class="contacts-list">
+		        <li>
+		          <div class="contacts-title">
+		            <h3>ООО "НСТГРУПП"</h3>
+		          </div>
+		          <div class="contacts-info">
+		            <a href="mailto:nstinfo@mail.ru" class="contacts-email">nstinfo@mail.ru</a>
+		            <p>БЦ "Риверсайд-Дон"  344000 
+		              <br>г.Ростов-на-Дону,  
+		              <br>ул. Береговая, д. 8, оф.609,610 
+		              <br>+7(863)247-58-25 
+		              <br>+7(863)201-88-77</p>
+		          </div>
+		        </li>
+		        <li>
+		          <div class="contacts-title">
+		            <h3>БУХГАЛТЕРИЯ</h3>
+		          </div>
+		          <div class="contacts-info">
+		            <a href="mailto:buh.nstinfo@mail.ru" class="contacts-email">buh.nstinfo@mail.ru</a>
+		            <p>БЦ "Риверсайд-Дон"  344000 
+		              <br>г.Ростов-на-Дону,  
+		              <br>ул. Береговая, д. 8, оф.609,610 
+		              <br>+7(863)247-58-25 
+		              <br>+7(863)201-88-77</p>
+		          </div>
+		        </li>
+		        <li>
+		          <div class="contacts-title">
+		            <h3>ОТДЕЛ ПРОДАЖ</h3>
+		          </div>
+		          <div class="contacts-info">
+		            <a href="mailto:a.sale.nstinfo@mail.ru  " class="contacts-email">a.sale.nstinfo@mail.ru  </a>
+		            <p>БЦ "Риверсайд-Дон"  344000 
+		              <br>г.Ростов-на-Дону,  
+		              <br>ул. Береговая, д. 8, оф.609,610 
+		              <br>+7(863)247-58-25 
+		              <br>+7(863)201-88-77</p>
+		          </div>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		  <div class="contacts-bottom">
+		    <div class="mbox2">
+		      <div class="contacts-bottom-inner">
+		        <div id="map" class="map"></div>
+		        <form action="ajax-programer.php" method="post" class="contacts-form">
+		          <div class="title">
+		            <h3>напишите нам</h3>
+		          </div>
+		          <div class="form-field">
+		            <input type="text" name="name" placeholder="Имя" required />
+		          </div>
+		          <div class="form-field">
+		            <input type="email" name="email" placeholder="Е-mail" required />
+		          </div>
+		          <div class="form-field">
+		            <label for="message">Сообщение</label>
+		            <textarea id="message" name="message"></textarea>
+		          </div>
+		          <button type="submit" class="el-button button-red">отправить</button>
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<!-- End Contacts -->
+    </div>
+    <!-- /MAIN -->
+
+    <div class="hidden-block">
+    
+        <div id="call_success">
+             <div class="call-success-wrap">
+                 <div class="call-success-title"> Спасибо за заявку!</div>
+                 <div class="call-success-subtitle">Мы свяжемся с Вами в ближайшее время</div>
+             </div>
+        </div>
+    
+        <div id="cost-popup" class="el-cost">
+          <div class="title">
+            <h4>рассчитать стоимость</h4>
+          </div>
+          <form action="ajax-programer.php" method="post" class="cost-form">
+            <div class="fields-wrap">
+              <div class="form-field">
+                <input type="text" name="name" placeholder="Имя" required />
+              </div>
+              <div class="form-field">
+                <input type="text" name="tel" class="tel-mask" placeholder="Телефон" required />
+              </div>
+              <div class="form-field">
+                <input type="text" name="city" placeholder="Город доставки" />
+              </div>
+              <div class="form-field">
+                <input type="text" name="material" placeholder="Материал" readonly />
+              </div>
+              <div class="form-field">
+                <input type="text" name="fraction" placeholder="Фракция" />
+              </div>
+              <div class="form-field">
+                <input type="text" name="amount" placeholder="Количество" />
+              </div>
+            </div>
+            <button type="submit" class="el-button button-red">отправить</button>
+          </form>
+        </div>
+    
+        <div id="discount-popup" class="el-cost">
+          <div class="title">
+            <h4>Заполните форму</h4>
+            <p>и узнайте какую скидку мы можем дать Вам</p>
+          </div>
+          <form action="ajax-programer.php" method="post" class="cost-form">
+            <div class="fields-wrap">
+              <div class="form-field">
+                <input type="text" name="name" placeholder="Имя" required />
+              </div>
+              <div class="form-field">
+                <input type="text" name="tel" class="tel-mask" placeholder="Телефон" required />
+              </div>
+              <div class="form-field">
+                <input type="text" name="city" placeholder="Город доставки" />
+              </div>
+              <div class="form-field">
+               <select name="material" data-placeholder="Выберете материал">
+                <option></option>
+                <option value="">1Lorem ipsum</option>
+                <option value="">2Lorem ipsum</option>
+                <option value="">3Lorem ipsum</option>
+              </select>
+              </div>
+              <div class="form-field">
+                <input type="text" name="fraction" placeholder="Фракция" />
+              </div>
+              <div class="form-field">
+                <input type="text" name="amount" placeholder="Количество" />
+                <input type="hidden" name="sale" value="Скидка">
+              </div>
+            </div>
+            <button type="submit" class="el-button button-red">отправить</button>
+          </form>
+        </div>
+    
+        <div id="call-popup" class="el-cost call">
+          <div class="title">
+            <h4>Заполните форму</h4>
+          </div>
+          <form action="ajax-programer.php" method="post" class="cost-form">
+            <div class="fields-wrap">
+              <div class="form-field">
+                <input type="text" name="name" placeholder="Имя" required />
+              </div>
+              <div class="form-field">
+                <input type="text" name="tel" class="tel-mask" placeholder="Телефон" required />
+              </div>
+            </div>
+            <button type="submit" class="el-button button-red">отправить</button>
+          </form>
+        </div>
+    
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer_placeholder"></div>
+    <footer class="footer">
+      <div class="mbox">
+        <div class="el-nav">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <div class="menu-wrap">
+            <ul class="menu sliding-menu">
+              <li>
+                <a href="about.html">О компании</a>
+                <ul>
+                  <li>
+                    <a href="docs.html">Документы</a>
+                  </li>
+                  <li>
+                    <a href="vacancies.html">Вакансии</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="catalog.html">Продукция</a>
+              </li>
+              <li>
+                <a href="services.html">Доставка</a>
+                <ul>
+                  <li>
+                    <a href="transport-auto.html">Автомобильные перевозки</a>
+                  </li>
+                  <li>
+                    <a href="transport-train.html">Ж/Д перевозки</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="partners.html">Партнеры</a>
+              </li>
+              <li>
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="nav-contacts">
+              <a href="tel:4353455462">+ (435) 345 54 62</a>
+              <a href="mailto:nstinfo@mail.ru">nstinfo@mail.ru</a>
+            </div>
+            <a href="#call-popup" class="el-button js-call">Обратный звонок</a>
+          </div>
+        </div>
+      </div>    
+      <div class="copyright">
+        <p>(c) НСТГРУПП 2017</p>
+        <a href="http://sheep.fish/" target="_blank">Создание сайта SheepFish</a>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+</div>
+
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMiooKqW-BEdkUUW9l8JZejaSl-VFlydY"></script>
+<script src="scripts/validate_script.js"></script>
+
+<script src="scripts/plagins.js"></script>
+
+<script src="scripts/main.js"></script>
+
+<!-- /SCRIPTS -->
+<script>
+  var mapZoom = 14;
+  var mapMarkerIcon = 'images/marker.png';
+  var mapMarkerY = 55.748442;
+  var mapMarkerX = 37.562470;
+  var mapCenterY = 55.748442;
+  var mapCenterX = 37.562470;
+</script>
+
+</body>
+</html>
